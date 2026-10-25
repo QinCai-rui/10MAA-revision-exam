@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 148" role="img" aria-labelledby="celery-title">
+  <title id="celery-title">A small bunch of celery with pale green stalks and leafy tops</title>
+  <path d="M42 137C37 111 31 83 21 55L32 51C43 80 48 107 51 136Z" fill="#94bb69"/>
+  <path d="M49 138C50 110 55 76 64 43L75 46C65 80 61 109 59 138Z" fill="#b5d58b"/>
+  <path d="M45 138C45 106 43 73 39 34L51 33C55 75 56 108 56 138Z" fill="#d0e5a5"/>
+  <path d="M43 57C43 39 25 24 19 33C10 27 5 38 14 45C4 53 15 63 24 58C26 69 38 69 43 57Z" fill="#568a4b"/>
+  <path d="M44 42C30 36 28 24 34 19C28 7 42 3 48 13C56 2 67 11 61 22C73 28 61 43 44 42Z" fill="#79a75b"/>
+  <path d="M65 60C53 48 59 30 68 33C67 18 82 20 83 33C96 30 100 43 87 49C95 61 78 70 65 60Z" fill="#669a50"/>
+  <path d="M47 133C46 103 45 75 44 48M54 132C56 108 61 80 68 62M44 127C39 102 33 81 27 65" fill="none" stroke="#edf3cc" stroke-width="2" stroke-linecap="round" opacity=".6"/>
+  <path d="M42 134Q50 139 60 134L59 141Q50 146 44 141Z" fill="#dce8b8"/>
+</svg>

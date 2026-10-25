@@ -42,10 +42,10 @@ Tectonic's bundled `tkz-euclide` is version 4.051b. Use that version's commands 
 5. Rebuild the exam:
 
    ```sh
-   uv run --with typst --with pymupdf python build_expanded.py
+   uv run --with typst --with pymupdf python build.py
    ```
 
-6. Inspect the affected full pages in `review-expanded/` before publishing.
+6. Inspect the affected full pages in `review/` before publishing.
 
 Commit the TeX sources and rendered figure PDFs together.
 

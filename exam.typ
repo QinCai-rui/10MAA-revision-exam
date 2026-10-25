@@ -1,8 +1,9 @@
 #import "common.typ": *
+#import "cover-brand.typ": cover-brand
 #show: document-style
 #set document(title: "10MAA Revision Examination 2026", author: "GPT-6.1 Sol")
 #align(center)[
-  #image("assets/sol.svg", width: 43mm)
+  #cover-brand()
   #v(1mm)
   #text(size: 11pt, weight: "bold")[GPT-6.1 SOL]
   #v(3mm)
@@ -17,7 +18,7 @@ Form class: #h(3mm) #box(width: 27mm, line(length: 100%, stroke: .5pt))
 
 Maths teacher's code: #h(3mm) #box(width: 77mm, line(length: 100%, stroke: .5pt))
 #v(7mm)
-#align(center)[*Time allowed: 2 hours*]
+#align(center)[*Time allowed: 2 hours 25 minutes*]
 *Instructions:*
 #set list(spacing: 7pt)
 - Write in blue/black pen only. Use a pencil for diagrams.
@@ -28,328 +29,314 @@ Maths teacher's code: #h(3mm) #box(width: 77mm, line(length: 100%, stroke: .5pt)
 #v(5mm)
 #table(columns: (76mm, 24mm), stroke: .5pt, inset: 4pt,
   [*Topic*], [*Mark*],
-  [Algebraic Expressions & Equations], [/34],
-  [Statistics & Probability], [/26],
-  [Trigonometry], [/12],
-  [Measurement], [/14],
-  [Coordinate Geometry], [/11],
-  [Graphs of Quadratic Functions], [/24],
-  [Geometry], [/14],
-  [*Total*], [#strong[/135]],
+  [Algebraic Expressions & Equations], [/31],
+  [Statistics & Probability], [/27],
+  [Trigonometry], [/13],
+  [Measurement], [/16],
+  [Coordinate Geometry], [/12],
+  [Graphs of Quadratic Functions], [/23],
+  [Geometry], [/38],
+  [*Total*], [#strong[/160]],
 )
 #v(1fr)
 #grid(columns: (1fr, auto), align: (left, right + bottom),
   text(size: 8pt)[Independent revision paper],
-  [#image("assets/openai.svg", height: 8mm) #h(2mm) #text(font: "Liberation Sans", size: 12pt)[OpenAI]],
+  [],
 )
 #newpage()
 #section[Useful Formulae]
-#v(1mm)
 *The Quadratic Formula*
 $ x = (-b plus.minus sqrt(b^2 - 4a c))/(2a) $
-#v(3mm)
+#v(1mm)
 *Volume of a cylinder*
 $ V = pi r^2 h $
-#v(3mm)
+#v(1mm)
 *Volume of a sphere*
 $ V = 4/3 pi r^3 $
-#v(3mm)
+#v(1mm)
+*Volume of a cone*
+$ V = 1/3 pi r^2 h $
+#v(1mm)
 *The Cosine Rule*
 $ a^2 = b^2 + c^2 - 2b c cos A $
-#v(3mm)
+#v(1mm)
 *The Sine Rule*
 $ a/(sin A) = b/(sin B) = c/(sin C) $
-#v(3mm)
+#v(1mm)
 *The Area of a Triangle*
 $ A = 1/2 a b sin C $
-#v(3mm)
+#v(1mm)
 *The midpoint of a line segment*
 $ ((x_1 + x_2)/2, (y_1 + y_2)/2) $
-#v(3mm)
+#v(1mm)
 *Distance*
 $ sqrt((x_2 - x_1)^2 + (y_2 - y_1)^2) $
-#v(3mm)
+#v(1mm)
 *Gradient of a line*
 $ m = (y_2 - y_1)/(x_2 - x_1) $
-#v(3mm)
+#v(1mm)
 *Equation of a line*
 $ y-y_1 = m(x-x_1) $
-#v(3mm)
+#v(1mm)
 *Perpendicular criteria*
 $ m_1 m_2 = -1 $
 For lines with defined gradients.
 #newpage()
-#section("Algebraic Expressions & Equations", marks: 34)
-#q[1.][Solve $4(2x-3)=3x+23$.]
-#work(height: 29mm, marks: 2, label: "x")
-#q[2.][(a) Solve the inequality $9-4t <= 3t+30$.]
-#work(height: 32mm, marks: 3)
-#q[][(b) Represent your solution to part (a) on the number line.]
-#v(7mm)
-#diagram("numberline", width: 163mm)
-#space(height: 4mm, marks: 1)
-#q[3.][Find the value of $3a^2-2b c$ when $a=-3$, $b=-2$ and $c=5$.]
-#work(height: 30mm, marks: 2)
+#section("Algebraic Expressions & Equations", marks: 31)
+#q[1.][A student writes $(x-4)^2=x^2+16$.]
+#q[][(a) Expand $(x-4)^2$ correctly.]
+#work(height: 15mm, marks: 2, grow: 1)
+#q[][(b) Simplify $(x^2-16)/(x-4)$ for $x != 4$.]
+#work(height: 22mm, marks: 2, grow: 1)
+#q[][(c) The student's original equality is true for exactly one value of $x$. Find that value.]
+#work(height: 23mm, marks: 2, label: "x", grow: 1.2)
+#q[2.][(a) Simplify $(16m^12)^(1/4)$, where $m>0$.]
+#work(height: 19mm, marks: 2, grow: 1)
+#q[][(b) The numbers $a$ and $b$ satisfy
+$ 9^a times 27^b=3^22, quad a=b+1. $
+Find $a$ and $b$.]
+#work(height: 30mm, marks: 3, grow: 1.8)
 #newpage()
 #section[Algebraic Expressions & Equations continued]
-#q[4.][Simplify fully. Assume all variables in this question are positive.]
-#q[][(a) $ (18p^7 q^3)/(6p^2 q) $]
-#work(height: 28mm, marks: 2)
-#q[][(b) $ (81k^8)^(3/4) $]
-#work(height: 29mm, marks: 2)
-#q[5.][(a) Factorise completely $6x^2-54$.]
-#work(height: 29mm, marks: 2)
-#q[][(b) Express $5/(x-2)-2/(x+1)$ as a single fraction in its simplest form.]
-#work(height: 38mm, marks: 3)
+#q[3.][A compiler processes files in batches. The table gives the time $T$, in milliseconds, for a batch containing $n$ files.]
+#v(2mm)
+#align(center)[#tbl((35mm, 22mm, 22mm, 22mm, 22mm),
+ [$n$], [1], [2], [3], [4],
+ [$T$ / milliseconds], [7], [14], [25], [40],
+)]
+#v(1mm)
+#q[][(a) Find the first differences and show that the second differences are constant.]
+#space(height: 22mm, marks: 2, grow: 1)
+#q[][(b) Find a quadratic formula for $T$ in terms of $n$.]
+#work(height: 33mm, marks: 3, label: "T", grow: 1.5)
+#q[][(c) Use your formula to predict the time for a batch of 10 files.]
+#work(height: 13mm, marks: 1, unit: "milliseconds", grow: .6)
+#q[4.][A coding club buys 20 stickers for \$78. Python stickers cost \$3 each and Rust stickers cost \$5 each.]
+#q[][(a) Let $p$ be the number of Python stickers and $r$ the number of Rust stickers. Form two simultaneous equations.]
+#space(height: 18mm, marks: 2, grow: .8)
+#q[][(b) Find how many stickers of each type the club buys.]
+#work(height: 26mm, marks: 2, grow: 1.4)
 #newpage()
 #section[Algebraic Expressions & Equations continued]
-#q[6.][Make $r$ the subject of $T=sqrt(5r+4)$.]
-#work(height: 24mm, marks: 2, label: "r")
-#q[7.][An AI service charges a fixed monthly fee of \$#h(0pt)$a$ and \$#h(0pt)$b$ per batch of requests.
+#q[5.][The inequality $2(3x-5)>5x+k$ is true when $x=4$, but false when $x=1$.
 
-One month, 40 batches cost \$86. Another month, 70 batches cost \$122.
+$k$ is an integer. Find all possible values of $k$.]
+#work(height: 47mm, marks: 4, label: "k", grow: 1)
+#q[6.][A rectangular pixel image is $n$ cells wide and $(n+7)$ cells high.
 
-Find the cost of 100 batches in one month.]
-#work(height: 33mm, marks: 3, label: "Cost", unit: "dollars")
-#q[8.][The diagram shows a right-angled triangular support for a computer stand. Its area is $30 "cm"^2$.
-
-Find the value of $x$.]
-#diagram("algebra-triangle", width: 107mm)
-#work(height: 30mm, marks: 4, label: "x", unit: "cm")
+A border one cell thick is added around all four sides. The enlarged image, including the border, contains 198 cells.]
+#diagram("new-border", width: 130mm)
+#q[][(a) Form an equation in $n$.]
+#work(height: 13mm, marks: 2, grow: .5)
+#q[][(b) Find the dimensions of the original image. Justify your choice of solution.]
+#work(height: 44mm, marks: 4, unit: "cells", grow: 1.5)
 #newpage()
-#section[Algebraic Expressions & Equations continued]
-#q[9.][In a fictional benchmark, a Windows computer completes $x$ identical jobs each hour. A Linux computer completes $(x+10)$ jobs each hour.
-
-Both computers work at constant rates.]
-#q[][(a) Write an expression for the time, in minutes, that Windows takes to complete one job.]
-#work(height: 15mm, marks: 1, unit: "minutes")
-#q[][(b) Write an expression for the time, in minutes, that Linux takes to complete one job.]
-#work(height: 15mm, marks: 1, unit: "minutes")
-#q[][(c) Linux takes 1 minute less per job than Windows. Form an equation in $x$.]
-#work(height: 22mm, marks: 2)
-#q[][(d) Solve your equation to find the number of jobs Windows completes each hour.]
-#work(height: 44mm, marks: 4, unit: "jobs per hour")
-#newpage()
-#section("Statistics & Probability", marks: 26)
-#q[1.][The table shows the number of programming projects completed by 30 students.]
-#align(center)[#tbl((47mm, 14mm, 14mm, 14mm, 14mm, 14mm),
-  [Projects], [0], [1], [2], [3], [4],
-  [Number of students], [3], [6], [10], [7], [4],
-)]
-#q[][(a) Find the mode.]
-#work(height: 9mm, marks: 1)
-#q[][(b) Find the median.]
-#work(height: 12mm, marks: 1)
-#q[][(c) Calculate the mean.]
-#work(height: 22mm, marks: 2)
-#q[2.][The table gives results from a fictional test of the same program.]
-#align(center)[#tbl((42mm, 38mm, 48mm),
-  [Operating system], [Number of runs], [Mean run time / seconds],
-  [Linux], [12], [8],
-  [macOS], [8], [11],
-  [Windows], [5], [14],
-)]
-#q[][Calculate the mean run time for all 25 runs.]
-#work(height: 27mm, marks: 3, unit: "seconds")
+#section("Statistics & Probability", marks: 27)
+#q[1.][The boxplots summarise a fictional benchmark. The same set of 20 tasks is run on each operating system.]
+#diagram("new-boxplots", width: 168mm)
+#v(2mm)
+#q[][(a) Find the difference between the median Windows and Linux run times.]
+#work(height: 10mm, marks: 1, unit: "seconds", grow: .6)
+#q[][(b) Which of Linux and macOS has the smaller interquartile range? Show your calculations.]
+#work(height: 18mm, marks: 2, grow: 1.2)
+#q[][(c) Estimate the percentage of runs taking less than 30 seconds for:
+#v(6mm)
+macOS: ...................................... #h(8mm) Linux: ...................................... #h(1fr) \[2\]]
+#q[][(d) Do the boxplots establish that every Linux run was faster than every Windows run? Give a reason.]
+#space(height: 13mm, marks: 1, grow: .8)
+#q[2.][Six values, written in ascending order, are
+$ 2, quad 5, quad 7, quad 9, quad k, quad 15. $
+Their mean is 8.]
+#q[][(a) Find $k$.]
+#work(height: 14mm, marks: 2, label: "k", grow: .8)
+#q[][(b) The final value should have been 150, not 15. State the median before and after this correction, and explain your answer.]
+#space(height: 16mm, marks: 2, grow: 1.2)
 #newpage()
 #section[Statistics & Probability continued]
-#q[3.][Of 40 students, 24 use Python, 19 use Rust, and 7 use neither language.
+#q[3.][Nine cards are labelled with programming languages:
 
-Complete the Venn diagram and find the number who use exactly one of the two languages.]
-#diagram("venn", width: 145mm)
-#work(height: 10mm, marks: 3, unit: "students")
-#q[4.][A club tests 100 computers. Each computer either passes or fails a compatibility check.]
-#align(center)[#tbl((40mm, 23mm, 23mm, 23mm),
-  [], [Pass], [Fail], [Total],
-  [Linux], [36], [4], [40],
-  [macOS], [24], [6], [30],
-  [Windows], [18], [12], [30],
-  [Total], [78], [22], [100],
-)]
-#q[][(a) Find the probability that a randomly selected computer uses Linux and passes.]
-#work(height: 5mm, marks: 1)
-#q[][(b) Given that a computer uses macOS, find the probability that it passes.]
-#work(height: 5mm, marks: 1)
-#q[][(c) Find the probability that a randomly selected computer uses Linux or fails.]
-#work(height: 8mm, marks: 1)
-#q[][(d) Two computers are selected at random without replacement. Find the probability that both are Windows computers that fail.]
-#work(height: 11mm, marks: 2)
+4 Python cards, 3 Rust cards and 2 C cards.
+
+Two cards are selected at random without replacement.]
+#q[][(a) Draw a probability tree showing whether each selected card is Rust or not Rust. Label every branch with its probability.]
+#space(height: 62mm, marks: 3, grow: 1)
+#q[][(b) Calculate the probability that the two cards show the same programming language.]
+#work(height: 29mm, marks: 3, grow: 1.3)
+#q[][(c) Given that the cards show the same language, find the probability that both are Rust.]
+#work(height: 24mm, marks: 2, grow: 1)
+#q[][(d) The experiment is repeated 180 times, with all nine cards returned before each new pair is selected. Find the expected number of pairs showing the same language.]
+#work(height: 13mm, marks: 1, unit: "pairs", grow: .6)
 #newpage()
 #section[Statistics & Probability continued]
-#q[5.][The table shows the times taken by an AI system to answer 160 prompts.]
-#align(center)[#tbl((42mm, 23mm, 47mm),
-  [Time, $t$ / seconds], [Frequency], [Cumulative frequency],
-  [$0 < t <= 20$], [16], [],
-  [$20 < t <= 40$], [32], [],
-  [$40 < t <= 60$], [56], [],
-  [$60 < t <= 80$], [40], [],
-  [$80 < t <= 100$], [16], [],
+#q[4.][The table records the build times for 72 Rust projects.]
+#v(2mm)
+#align(center)[#tbl((50mm, 30mm),
+ [Build time, $t$ / seconds], [Frequency],
+ [$0<t<=20$], [12],
+ [$20<t<=40$], [18],
+ [$40<t<=80$], [24],
+ [$80<t<=140$], [18],
 )]
-#q[][(a) Complete the cumulative frequency column. #h(1fr) \[1\]]
-#q[][(b) Draw a cumulative frequency graph on the grid. #h(1fr) \[2\]]
-#diagram("cf-grid", width: 168mm)
-#q[][(c) Use your graph to estimate the upper quartile of the response times.]
-#work(height: 9mm, marks: 1, unit: "seconds")
+#q[][Two students use the table to draw the diagrams below.]
+#v(2mm)
+#diagram("new-histogram-comparison", width: 180mm)
+#v(2mm)
+#q[][(a) Which diagram is a correct histogram? Justify your answer using bar areas.]
+#space(height: 16mm, marks: 2, grow: 1)
+#q[][(b) Estimate how many projects are represented by the darker shaded region in Diagram B. State the assumption used for your estimate.]
+#work(height: 16mm, marks: 2, unit: "projects", grow: 1)
+#q[][(c) Without assuming an even spread within classes, find the least and greatest possible numbers of projects with build times greater than 50 seconds.]
+#work(height: 18mm, marks: 2, grow: 1)
+#q[][(d) New caching halves every build time. State the new class interval and frequency density for the bar that originally represented $40<t<=80$.]
+#work(height: 17mm, marks: 2, grow: 1)
 #newpage()
-#section[Statistics & Probability continued]
-#q[6.][AI-generated programs are put through two checks.
+#section("Trigonometry", marks: 13)
+#q[1.][A triangle ABC has $A B=14$ cm, $A C=10$ cm and $angle A B C=35 degree$.
 
-The probability that a program passes the first check is $3/5$.
-
-If it passes the first check, the probability that it passes the second is $3/4$.
-
-If it fails the first check, it is repaired. The probability that a repaired program passes the second check is $1/2$.]
-#q[][(a) Complete the probability tree.]
-#diagram("tree", width: 158mm)
-#space(height: 0mm, marks: 3)
-#q[][(b) Find the probability that a program passes exactly one check.]
-#work(height: 21mm, marks: 2)
-#q[][(c) A student claims that more than half of all programs pass the second check. Use probabilities to decide whether the claim is correct.]
-#work(height: 24mm, marks: 2)
-#newpage()
-#section("Trigonometry", marks: 12)
-#q[1.][A camera is directly above point C. Point A is 36 m from C on horizontal ground. The angle of elevation of the camera from A is $28 degree$.
-
-Calculate the height $h$ of the camera above C.]
-#diagram("elevation", width: 138mm)
-#work(height: 24mm, marks: 2, label: "h", unit: "m")
-#q[2.][Three relay stations P, Q and R form a triangle.
-
-$P Q=80$ km, $Q R=60$ km and $P R=120$ km. The bearing of Q from P is $060 degree$. R lies clockwise from Q when viewed from P, as shown.]
-#diagram("bearings", width: 135mm)
-#q[][(a) Calculate angle QPR.]
-#work(height: 17mm, marks: 2, unit: "°")
+There are two possible positions for C, shown as C₁ and C₂.]
+#diagram("new-ssa", width: 156mm)
+#q[][(a) Find both possible values of angle ACB.]
+#work(height: 43mm, marks: 3, unit: "°", grow: 1.3)
+#q[][(b) For the triangle in which angle ACB is obtuse, calculate BC.]
+#work(height: 40mm, marks: 2, label: "BC", unit: "cm", grow: 1)
 #newpage()
 #section[Trigonometry continued]
-#q[2.][(b) Find the bearing of:
+#q[2.][A, B and C lie on horizontal ground. A mast CD is vertical. The angle of elevation of D is $35 degree$ from A and $55 degree$ from B.
 
-(i) R from P,]
-#work(height: 15mm, marks: 1, unit: "°")
-#q[][(ii) P from R.]
-#work(height: 15mm, marks: 1, unit: "°")
-#q[][(c) Calculate how far R is east of P.]
-#work(height: 29mm, marks: 2, unit: "km")
-#q[][(d) A fourth station S is on the opposite side of QR from P. In triangle QRS, angle RQS is $42 degree$ and angle QSR is $73 degree$.
-
-Calculate the distance RS.]
-#work(height: 32mm, marks: 2, label: "RS", unit: "km")
-#q[][(e) Calculate the area of triangle PQR.]
-#work(height: 28mm, marks: 2, unit: "km²")
+$A B=20$ m, $B C=x$ m and $C D=h$ m.]
+#diagram("new-mast", width: 131mm)
+#v(3mm)
+#q[][(a) Express $h$ in terms of $x$, using the angle at B.]
+#work(height: 16mm, marks: 1, label: "h", grow: .6)
+#q[][(b) Use the angle at A to form an equation in $x$ only.]
+#work(height: 22mm, marks: 1, grow: .8)
+#q[][(c) Calculate the height of the mast.]
+#work(height: 42mm, marks: 3, unit: "m", grow: 1.6)
 #newpage()
-#section("Measurement", marks: 14)
-#q[1.][Convert $0.48 "m"^2$ into $"cm"^2$.]
-#work(height: 12mm, marks: 1, unit: "cm²")
-#q[2.][A rectangular computer panel is 24 cm long and 10 cm wide. Two circular holes, each of diameter 6 cm, are cut out.]
-#diagram("plate", width: 132mm)
-#q[][Calculate the area of the remaining panel. Give your answer to the nearest $"cm"^2$.]
-#work(height: 20mm, marks: 3, unit: "cm²")
-#q[3.][In triangle ADC, B lies on AC and E lies on AD, with $B E parallel C D$.
+#section[Trigonometry continued]
+#q[3.][A delivery drone flies 8 km from A to B on a bearing of $040 degree$, then 6 km from B to C on a bearing of $100 degree$.
 
-$A B=12$ cm, $B E=9$ cm and $C D=15$ cm. Calculate BC.]
-#diagram("similar", width: 123mm)
-#work(height: 17mm, marks: 2, label: "BC", unit: "cm")
+Calculate the direct distance from A to C.]
+#diagram("new-bearings", width: 155mm)
+#work(height: 58mm, marks: 3, label: "AC", unit: "km", grow: 1)
 #newpage()
-#section[Measurement continued]
-#q[4.][A cylindrical container has internal radius 6 cm and height 20 cm. Solid metal spheres each have radius 3 cm.]
-#diagram("solids", width: 155mm)
-#q[][(a) Calculate the volume of the cylinder.]
-#work(height: 28mm, marks: 1, unit: "cm³")
-#q[][(b) Calculate the volume of one sphere.]
-#work(height: 28mm, marks: 1, unit: "cm³")
-#q[][(c) The cylinder initially contains $1800 "cm"^3$ of water. The spheres are lowered into it one at a time and become fully submerged.
+#section("Measurement", marks: 16)
+#q[1.][A 3D-printed case is an open-topped rectangular box. Its external dimensions are 12 cm by 8 cm by 5 cm.
 
-Find the greatest number of spheres that can be added without water overflowing. Ignore the volume of any supports.]
-#work(height: 43mm, marks: 2, unit: "spheres")
+The four walls and the base are each 0.4 cm thick.]
+#diagram("new-case", width: 153mm)
+#q[][(a) Calculate the internal capacity of the case.]
+#work(height: 28mm, marks: 3, unit: "cm³", grow: 1.4)
+#q[][(b) Calculate the volume of material used to print the case.]
+#work(height: 23mm, marks: 2, unit: "cm³", grow: 1)
+#q[][(c) The printing material has density $1.24 "g/cm"^3$. Calculate the mass of the case.]
+#work(height: 18mm, marks: 1, unit: "g", grow: .7)
 #newpage()
 #section[Measurement continued]
-#q[5.][A school installs a straight row of acoustic panels in a computer room.
+#q[2.][Two cooling ducts are geometrically similar. Their volumes are $216 "cm"^3$ and $729 "cm"^3$. The smaller duct is 8 cm high.]
+#diagram("new-ducts", width: 153mm)
+#q[][(a) Calculate the height of the larger duct.]
+#work(height: 38mm, marks: 2, unit: "cm", grow: 1)
+#q[][(b) An external surface on the smaller duct has area $96 "cm"^2$.
 
-The required row length is 24 m, correct to the nearest metre.
-
-Each panel is 0.80 m long, correct to the nearest centimetre.
-
-The panels must cover at least the required length. Only complete panels may be bought, and there are no gaps or overlaps. A panel may extend beyond the end of the row.
-
-Each panel costs \$32.50.
-
-Find the greatest possible difference between the total costs of the panels needed. Show your working clearly.]
-#work(height: 110mm, marks: 4, label: "Difference", unit: "dollars")
+Calculate the area of the corresponding surface on the larger duct.]
+#work(height: 38mm, marks: 2, unit: "cm²", grow: 1)
 #newpage()
-#section("Coordinate Geometry", marks: 11)
-#q[1.][Line L has equation $y=4-2x$.]
-#q[][(a) State the gradient of L.]
-#work(height: 9mm, marks: 1)
-#q[][(b) Does the point $(15,-24)$ lie on L? Give a reason.]
-#work(height: 17mm, marks: 2)
-#q[2.][A has coordinates $(-2,7)$ and B has coordinates $(6,1)$.]
-#q[][(a) Find the midpoint of AB.]
-#work(height: 14mm, marks: 1)
-#q[][(b) Calculate the length of AB.]
-#work(height: 22mm, marks: 2, unit: "units")
-#q[][(c) Find the equation of the perpendicular bisector of AB. Give your answer in the form $p x+q y=r$, where $p$, $q$ and $r$ are integers.]
-#work(height: 43mm, marks: 5)
+#section[Measurement continued]
+#q[3.][A cylindrical canister has internal radius 3.0 cm, correct to the nearest 0.1 cm, and internal height 12 cm, correct to the nearest centimetre.]
+#q[][(a) Write the bounds for the radius $r$ and height $h$.]
+#work(height: 17mm, marks: 2, grow: .7)
+#q[][(b) A seller claims that every canister with these measurements can hold at least $350 "cm"^3$.
+
+Use a calculation to decide whether this claim is guaranteed.]
+#work(height: 29mm, marks: 2, grow: 1.2)
+#q[][(c) Use the stated values $r=3.0$ cm and $h=12$ cm for this part.
+
+A solid cone has the same radius and height as the canister. The canister is filled with water and the cone is fully inserted, as shown. Water overflows.
+
+Calculate the volume of water remaining inside the canister.]
+#v(3mm)
+#diagram("new-cone", width: 124mm)
+#work(height: 24mm, marks: 2, unit: "cm³", grow: 1)
 #newpage()
-#section("Graphs of Quadratic Functions", marks: 24)
-#q[1.][(a) Complete the table of values for $y=x^2-x-4$.]
-#align(center)[#tbl((14mm, 17mm, 17mm, 17mm, 17mm, 17mm, 17mm),
-  [$x$], [-2], [-1], [0], [1], [2], [3],
-  [$y$], [], [], [], [], [], [],
-)]
-#space(height: 1mm, marks: 2)
-#q[][(b) Draw the graph of $y=x^2-x-4$ for $-2 <= x <= 3$ on the grid.]
-#diagram("quadratic-grid", width: 167mm)
-#space(height: 1mm, marks: 3)
+#section("Coordinate Geometry", marks: 12)
+#q[1.][The diagram shows A $(-4,1)$, B $(4,5)$ and C $(6,1)$.]
+#diagram("new-coordinate-triangle", width: 157mm)
+#q[][(a) Show, using gradients, that AB is perpendicular to BC.]
+#space(height: 32mm, marks: 3, grow: 1.4)
+#q[][(b) Calculate the area of triangle ABC.]
+#work(height: 24mm, marks: 2, unit: "units²", grow: 1)
+#q[][(c) B is reflected in the line AC. Write the coordinates of its image.]
+#work(height: 16mm, marks: 1, grow: .6)
+#newpage()
+#section[Coordinate Geometry continued]
+#q[2.][The lines $L: y=2x+1$ and $M: y=-1/2 x+6$ intersect at P.
+
+They meet the horizontal line $y=-3$ at A and B respectively. PK is perpendicular to AB.]
+#diagram("new-line-regions", width: 150mm)
+#q[][(a) Find the coordinates of P algebraically.]
+#work(height: 28mm, marks: 2, grow: 1.2)
+#q[][(b) Calculate the length AB.]
+#work(height: 22mm, marks: 2, label: "AB", unit: "units", grow: .8)
+#q[][(c) Find the ratio of the area of triangle APK to the area of triangle PKB. Give your answer in its simplest form.]
+#work(height: 24mm, marks: 2, grow: 1.1)
+#newpage()
+#section("Graphs of Quadratic Functions", marks: 23)
+#q[1.][The cross-section of an arch is modelled by a parabola. Its highest point is $(2,9)$ and it passes through $(0,5)$.
+
+$y$ is the height in metres above the floor. $x$ is the horizontal position in metres relative to a reference post. Negative values of $x$ are positions west of the post.]
+#diagram("new-arch", width: 151mm)
+#q[][(a) Find the equation of the parabola in the form $y=a(x-h)^2+k$.]
+#work(height: 24mm, marks: 3, grow: 1)
+#q[][(b) Find the horizontal positions where the arch meets the floor.]
+#work(height: 24mm, marks: 3, unit: "m", grow: 1)
+#q[][(c) Find the interval of horizontal positions for which the arch is at least 8 m above the floor.]
+#work(height: 27mm, marks: 3, grow: 1.1)
 #newpage()
 #section[Graphs of Quadratic Functions continued]
-#q[2.][(a) On the grid, sketch $f(x)=(x+2)^2-4$. Clearly label its vertex and both x-intercepts.]
-#q[][(b) On the same grid, sketch $g(x)=(x-1)^2-1$. Clearly label its vertex. Label each curve with its function name.]
-#diagram("transform-grid", width: 167mm)
-#align(right)[(a) \[3\] #h(8mm) (b) \[3\]]
-#q[][(c) Describe fully the transformation that maps the graph of $f$ onto the graph of $g$.]
-#space(height: 32mm, marks: 2)
+#q[2.][An AI program processes $n$ items in a batch. Its memory use, $M$, in megabytes, is modelled by
+$ M=2n^2+6n+12. $
+$n$ is a positive whole number.]
+#q[][(a) Write $2n^2+6n+12$ in completed-square form.]
+#work(height: 30mm, marks: 2, grow: 1)
+#q[][(b) The program has 200 MB of memory available. Find the greatest number of items it can process in one batch. Show how your answer follows from the quadratic model.]
+#work(height: 50mm, marks: 4, unit: "items", grow: 1.6)
+#q[][(c) Describe the translation that maps the graph of $y=2x^2$ onto the graph of $y=2x^2+6x+12$.]
+#space(height: 28mm, marks: 2, grow: 1)
 #newpage()
 #section[Graphs of Quadratic Functions continued]
-#q[3.][A small robot launches a foam ball. Its height $h$ metres above the floor is modelled by
-$ h=1+4t-t^2, $
-where $t$ is the time in seconds after launch. The model applies from launch until the ball first reaches the floor.]
-#q[][(a) Find the height at launch.]
-#work(height: 12mm, marks: 2, unit: "m")
-#q[][(b) Calculate the height after 2 seconds.]
-#work(height: 15mm, marks: 2, unit: "m")
-#q[][(c) Find the time when the ball reaches the floor.]
-#work(height: 27mm, marks: 3, unit: "seconds")
-#q[][(d) Find all the times, within the stated model, when the ball is 2 m above the floor.]
-#work(height: 33mm, marks: 4, unit: "seconds")
+#q[3.][The graph of $y=x^2-4x+1$ is drawn below.]
+#q[][(a) On the same grid, draw the line $y=1-x$. #h(1fr) \[2\]]
+#v(3mm)
+#diagram("new-intersection", width: 165mm)
+#q[][(b) Use the graph to estimate the coordinates of both intersection points.]
+#work(height: 16mm, marks: 2, grow: .8)
+#q[][(c) Verify the x-coordinates of the intersections algebraically.]
+#space(height: 28mm, marks: 2, grow: 1.2)
 #newpage()
-#section("Geometry", marks: 14)
-#q[1.][ABC is an isosceles triangle with $A B=A C$. D, B and C lie on a straight line. Angle DBA is $128 degree$.
+#section("Geometry", marks: 38)
+#q[1.][TA and TB are tangents to a circle with centre O. A and B are the points of contact. Angle AOB is $110 degree$.
 
-Find angle $e$. Give geometric reasons for each step.]
-#diagram("isosceles", width: 151mm)
-#space(height: 74mm, marks: 4)
-#newpage()
-#section[Geometry continued]
-#q[2.][ABCD is a cyclic quadrilateral. B, C and E lie on a straight line.
-
-Angle ABC is $110 degree$ and angle BAC is $35 degree$.]
-#diagram("cyclic", width: 151mm)
-#q[][(a) Calculate angle $m=angle A D C$. Give a geometric reason.]
-#space(height: 35mm, marks: 2)
-#q[][(b) Calculate angle $j=angle A C E$. Give geometric reasons for your steps.]
-#space(height: 47mm, marks: 4)
+C lies on the minor arc AB.]
+#diagram("new-tangents", width: 158mm)
+#q[][(a) Calculate angle OAB. Give a geometric reason.]
+#space(height: 22mm, marks: 2, grow: 1)
+#q[][(b) Calculate angle ATB. Give geometric reasons for your steps.]
+#space(height: 25mm, marks: 3, grow: 1.4)
+#q[][(c) Calculate angle ACB. Give a geometric reason.]
+#space(height: 22mm, marks: 2, grow: 1)
 #newpage()
 #section[Geometry continued]
-#q[3.][OABC is a parallelogram. M is the midpoint of AB, and N is the midpoint of BC.
+#q[2.][$arrow(O A)=bold(p)$ and $arrow(O B)=bold(q)$.
 
-$arrow(O A)=bold(p)$ and $arrow(O C)=bold(q)$.]
-#diagram("vectors", width: 148mm)
-#q[][(a) Find, in terms of $bold(p)$ and $bold(q)$:
+C lies on AB, with $A C:C B=2:1$.
 
-(i) $arrow(O M)$,]
-#work(height: 12mm, marks: 1)
-#q[][(ii) $arrow(O N)$.]
-#work(height: 12mm, marks: 1)
-#q[][(b) Use a vector method to prove that MN is parallel to AC.]
-#space(height: 29mm, marks: 2)
-#v(1fr)
-#align(center)[*End of Assessment*]
+D is defined by $arrow(O D)=2bold(q)-bold(p)$.]
+#diagram("new-vector-line", width: 151mm)
+#q[][(a) Find $arrow(O C)$ in terms of $bold(p)$ and $bold(q)$.]
+#work(height: 22mm, marks: 2, grow: 2)
+#q[][(b) Prove, using vectors, that A, C and D lie on one straight line.]
+#space(height: 29mm, marks: 2, grow: 2.5)
+#q[][(c) Find the ratio $A C:C D$ in its simplest form.]
+#work(height: 22mm, marks: 2, grow: 2)
+#include "vectors_extra.typ"
