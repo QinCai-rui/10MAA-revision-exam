@@ -44,4 +44,4 @@ uv run --with typst --with pymupdf python build_original.py
 
 This is an unofficial revision resource, not a school-issued exam. GPT-6.1 Sol generated the paper and worked solutions, with code-based checks and review. Errors may remain.
 
-The diagrams and custom sun logo are programmatically drawn SVGs. The OpenAI logo comes from [OpenAI's favicon](https://openai.com/favicon.svg). Its use does not imply OpenAI endorsement. The reference past papers and knowledge booklet are not included.
+The diagrams and custom sun logo are programmatically drawn SVGs. The OpenAI logo comes from [OpenAI's favicon](https://openai.com/favicon.svg). Its use does not imply OpenAI endorsement. No past papers or knowledge booklet are re-distributed here.
