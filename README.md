@@ -37,11 +37,15 @@ uv run --with typst --with pymupdf python build_original.py
 - `vectors_extra.typ` and `vectors_extra_schedule.typ` contain the additional vector questions and solutions.
 - `build_expanded.py` combines those sources and updates the timing and mark totals.
 - `common.typ` defines shared page layout and question formatting.
-- `make_original_assets.py` and `make_vector_assets.py` draw the SVG diagrams. They use helpers in `make_assets.py`.
-- `assets/` contains the diagrams and cover logos.
+- `diagrams/tex/` contains the TikZ geometry figures and their shared print style.
+- `diagrams/manifest.json` records each figure's print size and alternative text.
+- `assets/diagrams/` contains the rendered vector PDFs. Ordinary exam builds use these without requiring TeX.
+- The Python SVG generators remain for charts, graph grids, logos, and earlier drafts.
+
+See [Build and edit the geometry diagrams](diagrams/README.md) to regenerate the TikZ figures.
 
 ## About this paper
 
 This is an unofficial revision resource, not a school-issued exam. GPT-6.1 Sol generated the paper and worked solutions, with code-based checks and review. Errors may remain.
 
-The diagrams and custom sun logo are programmatically drawn SVGs. The OpenAI logo comes from [OpenAI's favicon](https://openai.com/favicon.svg). Its use does not imply OpenAI endorsement. No past papers or knowledge booklet are re-distributed here.
+The geometry figures use TikZ and `tkz-euclide`. Charts, graph grids, and the custom sun logo use programmatically drawn SVGs. The OpenAI logo comes from [OpenAI's favicon](https://openai.com/favicon.svg). Its use does not imply OpenAI endorsement. No past papers or knowledge booklet are re-distributed here.

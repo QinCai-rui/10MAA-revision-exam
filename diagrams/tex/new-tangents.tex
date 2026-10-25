@@ -1,0 +1,25 @@
+\input{style.tex}
+\begin{document}
+\begin{tikzpicture}
+  \tkzDefPoint(4.9,4.3){O}
+  \tkzDefPoint(8,4.3){C}
+  \tkzDefPointBy[rotation=center O angle 55](C) \tkzGetPoint{A}
+  \tkzDefPointBy[rotation=center O angle -55](C) \tkzGetPoint{B}
+  \tkzDefLine[orthogonal=through A](O,A) \tkzGetPoint{U}
+  \tkzDefLine[orthogonal=through B](O,B) \tkzGetPoint{V}
+  \tkzInterLL(A,U)(B,V) \tkzGetPoint{T}
+  \tkzDrawCircle(O,A)
+  \tkzDrawSegments(O,A O,B A,B A,T B,T A,C B,C)
+  % Tangent right angles are deliberately unmarked: students supply the reason.
+  \tkzMarkAngle[size=.5,line width=.4pt](B,O,A)
+  \tkzLabelAngle[pos=1.1](B,O,A){$110^\circ$}
+  \node[point] at (O) {};
+  \node[left=2pt] at (O) {$O$};
+  \node[above=2pt] at (A) {$A$};
+  \node[below=2pt] at (B) {$B$};
+  \node[right=2pt] at (C) {$C$};
+  \node[right=2pt] at (T) {$T$};
+  \NotToScale{(13.5,7.2)}
+  \ExamBounds{158}{86.9}
+\end{tikzpicture}
+\end{document}

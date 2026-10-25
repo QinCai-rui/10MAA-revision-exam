@@ -1,0 +1,27 @@
+\input{style.tex}
+\begin{document}
+\begin{tikzpicture}
+  \coordinate (O) at (1.8,1.8);
+  \coordinate (A) at (13.2,1.8);
+  \coordinate (C) at (3.7,6.8);
+  \coordinate (B) at ($(C)+(3.8,0)$);
+  \tkzInterLL(O,B)(A,C) \tkzGetPoint{X}
+  \tkzDefLine[parallel=through X](O,A) \tkzGetPoint{U}
+  \tkzInterLL(X,U)(O,C) \tkzGetPoint{M}
+  \tkzInterLL(X,U)(A,B) \tkzGetPoint{N}
+  \draw[vector] (O)--(A) node[midway,below=4pt] {$6\symbf{a}$};
+  \draw[vector] (C)--(B) node[midway,above=3pt] {$2\symbf{a}$};
+  \draw[vector] (O)--(C) node[pos=.38,left=4pt] {$\symbf{b}$};
+  \draw (A)--(B) (O)--(B) (A)--(C) (M)--(N);
+  \node[below left=1pt] at (O) {$O$};
+  \node[below right=1pt] at (A) {$A$};
+  \node[above left=1pt] at (C) {$C$};
+  \node[above right=1pt] at (B) {$B$};
+  \node[left=3pt] at (M) {$M$};
+  \node[right=3pt] at (N) {$N$};
+  \node[below=4pt] at (X) {$X$};
+  \foreach \p in {M,N,X} \node[point] at (\p) {};
+  \NotToScale{(13.2,6.9)}
+  \ExamBounds{157}{82.23810}
+\end{tikzpicture}
+\end{document}

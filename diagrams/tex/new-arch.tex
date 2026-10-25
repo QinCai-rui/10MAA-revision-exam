@@ -1,0 +1,17 @@
+\input{style.tex}
+\begin{document}
+\begin{tikzpicture}
+  \begin{scope}[shift={(4.7,1.4)},x=12mm,y=4.5mm]
+    \draw[axis] (-2,0)--(6,0) node[right] {$x$};
+    \draw[axis] (0,-1)--(0,11) node[above] {$y$};
+    \draw[smooth,domain=-1:5,samples=100] plot (\x,{-((\x-2)^2)+9});
+    \node[point] at (2,9) {};
+    \node[above=3pt] at (2,9) {$(2,9)$};
+    \node[point] at (0,5) {};
+    \node[left=3pt] at (0,5) {$(0,5)$};
+    \node[below left=1pt] at (0,0) {$O$};
+  \end{scope}
+  \NotToScale{(12.7,5.8)}
+  \ExamBounds{151}{73.06452}
+\end{tikzpicture}
+\end{document}

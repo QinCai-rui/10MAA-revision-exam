@@ -1,0 +1,26 @@
+\input{style.tex}
+\begin{document}
+\begin{tikzpicture}
+  \coordinate (A) at (2.1,1.6);
+  \coordinate (B) at (10.7,1.6);
+  \coordinate (D) at (4.5,6.6);
+  \coordinate (C) at ($(B)+(D)-(A)$);
+  \coordinate (P) at ($(A)!.5!(B)$);
+  \coordinate (Q) at ($(B)!.5!(C)$);
+  \coordinate (R) at ($(C)!.5!(D)$);
+  \coordinate (S) at ($(D)!.5!(A)$);
+  \draw (A)--(B)--(C)--(D)--cycle;
+  \draw (P)--(Q)--(R)--(S)--cycle;
+  \draw[construction] (A)--(C);
+  \node[below left=1pt] at (A) {$A$};
+  \node[below right=1pt] at (B) {$B$};
+  \node[above right=1pt] at (C) {$C$};
+  \node[above left=1pt] at (D) {$D$};
+  \node[below=3pt] at (P) {$P$};
+  \node[right=3pt] at (Q) {$Q$};
+  \node[above=3pt] at (R) {$R$};
+  \node[left=3pt] at (S) {$S$};
+  \NotToScale{(13.2,.65)}
+  \ExamBounds{157}{79.76613}
+\end{tikzpicture}
+\end{document}

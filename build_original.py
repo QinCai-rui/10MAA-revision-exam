@@ -15,7 +15,7 @@ for stem,source,target in [
 ]:
     if not (ROOT/source).exists():
         continue
-    typst.compile(str(ROOT/source),output=str(ROOT/target))
+    typst.compile(str(ROOT/source),output=str(ROOT/target),timestamp=1792886400)
     doc=pymupdf.open(ROOT/target)
     pages=[]
     for i,page in enumerate(doc):

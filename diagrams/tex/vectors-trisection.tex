@@ -1,0 +1,24 @@
+\input{style.tex}
+\begin{document}
+\begin{tikzpicture}
+  \coordinate (O) at (2,1.6);
+  \coordinate (A) at (12.6,1.6);
+  \coordinate (B) at (4.9,6.6);
+  \coordinate (P) at ($(O)!2/3!(A)$);
+  \coordinate (Q) at ($(O)!2/3!(B)$);
+  \coordinate (R) at ($(A)!.5!(Q)$);
+  \coordinate (S) at ($(B)!.5!(P)$);
+  \draw (O)--(A)--(B)--cycle;
+  \draw (A)--(Q) (B)--(P) (R)--(S);
+  \node[below left=1pt] at (O) {$O$};
+  \node[below right=1pt] at (A) {$A$};
+  \node[above=2pt] at (B) {$B$};
+  \node[below=3pt] at (P) {$P$};
+  \node[left=3pt] at (Q) {$Q$};
+  \node[right=4pt] at (R) {$R$};
+  \node[left=6pt] at (S) {$S$};
+  \foreach \p in {P,Q,R,S} \node[point] at (\p) {};
+  \NotToScale{(13.3,6.5)}
+  \ExamBounds{157}{78.5}
+\end{tikzpicture}
+\end{document}

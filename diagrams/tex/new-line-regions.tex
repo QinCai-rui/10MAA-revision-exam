@@ -1,0 +1,24 @@
+\input{style.tex}
+\begin{document}
+\begin{tikzpicture}
+  \begin{scope}[shift={(5.4,5.4)},x=4mm,y=4mm]
+    \coordinate (P) at (0,0);
+    \coordinate (A) at (-4,-8);
+    \coordinate (B) at (16,-8);
+    \coordinate (K) at (0,-8);
+    \draw (-5.5,-11)--(1.7,3.4);
+    \draw (-6.5,3.25)--(18,-9);
+    \draw (-6,-8)--(19,-8);
+    \draw[construction] (P)--(K);
+    \node[above left=2pt] at (P) {$P$};
+    \node[below left=2pt] at (A) {$A$};
+    \node[below right=2pt] at (B) {$B$};
+    \node[below right=2pt] at (K) {$K$};
+    \node[left=3pt] at (-2,-4) {$L$};
+    \node[above right=2pt] at (9,-4.5) {$M$};
+    \node[above=3pt] at (5,-8) {$y=-3$};
+  \end{scope}
+  \NotToScale{(12.8,6.1)}
+  \ExamBounds{150}{72.58065}
+\end{tikzpicture}
+\end{document}

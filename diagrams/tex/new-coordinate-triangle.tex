@@ -1,0 +1,27 @@
+\input{style.tex}
+\begin{document}
+\begin{tikzpicture}
+  % Equal units on both axes preserve the geometry of the coordinate triangle.
+  \begin{scope}[shift={(6.2,3.1)},x=5mm,y=5mm]
+    \draw[axis] (-6,0)--(8,0) node[right] {$x$};
+    \draw[axis] (0,-4)--(0,7) node[above] {$y$};
+    \foreach \x in {-6,-4,-2,2,4,6} {
+      \draw (\x,-.1)--(\x,.1);
+      \node[below=2pt,font=\fontsize{9}{10}\selectfont] at (\x,0) {$\x$};
+    }
+    \foreach \y in {-4,-2,2,4,6} {
+      \draw (-.1,\y)--(.1,\y);
+      \node[left=2pt,font=\fontsize{9}{10}\selectfont] at (0,\y) {$\y$};
+    }
+    \coordinate (A) at (-4,1);
+    \coordinate (B) at (4,5);
+    \coordinate (C) at (6,1);
+    \draw (A)--(B)--(C)--cycle;
+    \node[above left=3pt] at (A) {$A\,(-4,1)$};
+    \node[above=3pt] at (B) {$B\,(4,5)$};
+    \node[right=3pt] at (C) {$C\,(6,1)$};
+    \node[below left=1pt] at (0,0) {$O$};
+  \end{scope}
+  \ExamBounds{157}{77.21311}
+\end{tikzpicture}
+\end{document}

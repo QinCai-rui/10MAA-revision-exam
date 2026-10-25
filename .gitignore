@@ -3,12 +3,20 @@ __pycache__/
 *.py[cod]
 .venv/
 venv/
+.tools/
+
+# TeX intermediates. Keep the rendered diagram PDFs.
+*.aux
+*.log
+*.xdv
+*.synctex.gz
 
 # Generated Typst intermediates and page-by-page review output
 *.generated.typ
 /review/
 /review-new/
 /review-expanded/
+/review-diagrams/
 
 # Local settings and credentials
 .env

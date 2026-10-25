@@ -1,0 +1,27 @@
+\input{style.tex}
+\begin{document}
+\begin{tikzpicture}
+  % Coordinates in cm; 1 km = 0.85 cm. A bearing b is the polar angle 90 - b.
+  \def\k{.85}
+  \coordinate (A) at (2.5,1.2);
+  \coordinate (B) at ($(A)+(50:8*\k)$);
+  \coordinate (C) at ($(B)+(-10:6*\k)$);
+  \foreach \p in {A,B} {
+    \draw[construction,-{Stealth[length=4pt,width=3pt]}] (\p) -- ++(0,2.4) node[above,inner sep=1pt] {N};
+  }
+  \draw (A) -- (B) -- (C);
+  \draw[construction] (A) -- (C);
+  \draw[line width=.45pt,-{Stealth[length=3.5pt,width=2.8pt]}] ($(A)+(0,1.2)$) arc[start angle=90,end angle=50,radius=1.2];
+  \node at ($(A)+(70:1.65)$) {$040^\circ$};
+  \draw[line width=.45pt,-{Stealth[length=3.5pt,width=2.8pt]}] ($(B)+(0,.9)$) arc[start angle=90,end angle=-10,radius=.9];
+  \node at ($(B)+(38:1.5)$) {$100^\circ$};
+  \foreach \p in {A,B,C} \node[point] at (\p) {};
+  \node[below left] at (A) {$A$};
+  \node[left=1mm] at (B) {$B$};
+  \node[right] at (C) {$C$};
+  \path (A) -- node[sloped,above left,pos=.5] {8 km} (B);
+  \path (B) -- node[sloped,above,pos=.62] {6 km} (C);
+  \NotToScale{(13.5,1.4)}
+  \ExamBounds{155}{100}
+\end{tikzpicture}
+\end{document}

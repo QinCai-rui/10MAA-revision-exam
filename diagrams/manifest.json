@@ -1,0 +1,18 @@
+{
+  "new-border": {"width_mm": 130, "height_mm": 76.60714, "alt": "An image with a one-cell border. Original dimensions are n by n plus seven cells."},
+  "new-ssa": {"width_mm": 156, "height_mm": 85.8, "alt": "Two possible triangles ABC share AB of 14 centimetres, AC of 10 centimetres, and angle ABC of 35 degrees."},
+  "new-mast": {"width_mm": 131, "height_mm": 75.5769, "alt": "A vertical mast CD observed from ground points A and B, twenty metres apart, at elevations of 35 and 55 degrees."},
+  "new-bearings": {"width_mm": 155, "height_mm": 100, "alt": "A route from A to B, eight kilometres on bearing 040 degrees, then six kilometres to C on bearing 100 degrees."},
+  "new-case": {"width_mm": 153, "height_mm": 91.30645, "alt": "An open rectangular case with external dimensions twelve by eight by five centimetres and walls and base 0.4 centimetres thick."},
+  "new-ducts": {"width_mm": 153, "height_mm": 66.3, "alt": "Two similar ducts of volumes 216 and 729 cubic centimetres. The smaller duct is eight centimetres high."},
+  "new-cone": {"width_mm": 124, "height_mm": 59.9333, "alt": "A cone inside a cylinder with a common radius of 3.0 centimetres and height twelve centimetres."},
+  "new-coordinate-triangle": {"width_mm": 157, "height_mm": 77.21311, "alt": "Triangle with vertices A at negative four comma one, B at four comma five, and C at six comma one, on equally scaled coordinate axes."},
+  "new-line-regions": {"width_mm": 150, "height_mm": 72.58065, "alt": "Lines L and M meet at P above horizontal line y equals negative three. A and B are the intersections with that horizontal line, and K is directly below P."},
+  "new-arch": {"width_mm": 151, "height_mm": 73.06452, "alt": "A downward-opening parabolic arch has vertex two comma nine and passes through zero comma five."},
+  "new-tangents": {"width_mm": 158, "height_mm": 86.9, "alt": "A circle with centre O, tangents TA and TB, point C on minor arc AB, and central angle AOB of 110 degrees."},
+  "new-vector-line": {"width_mm": 151, "height_mm": 75.5, "alt": "Triangle OAB with C two-thirds of the way from A to B and point D beyond B on the same line. Vectors OA and OB are p and q."},
+  "vectors-trisection": {"width_mm": 157, "height_mm": 78.5, "alt": "Triangle OAB with P and Q two-thirds along OA and OB, and R and S the midpoints of AQ and BP."},
+  "vectors-midpoint-parallelogram": {"width_mm": 157, "height_mm": 79.76613, "alt": "Parallelogram ABCD with consecutive side midpoints P, Q, R, and S joined, and diagonal AC dashed."},
+  "vectors-cevians": {"width_mm": 155, "height_mm": 81.25, "alt": "Triangle ABC with P on BC, Q on AC, and lines AP and BQ intersecting at T."},
+  "vectors-trapezium": {"width_mm": 157, "height_mm": 82.2381, "alt": "Trapezium OABC has parallel sides OA equal to six a and CB equal to two a. Diagonals meet at X; a parallel through X meets the legs at M and N."}
+}

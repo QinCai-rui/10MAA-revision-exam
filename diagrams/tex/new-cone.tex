@@ -1,0 +1,28 @@
+\input{style.tex}
+\begin{document}
+\begin{tikzpicture}
+  % True proportions: r = 3.0 cm, h = 12 cm at 0.375 cm per cm (page coordinates in cm).
+  % The cone is inserted apex down, so its base fills the canister's top.
+  \def\R{1.125} \def\H{4.5} \def\ry{.36}
+  \coordinate (T) at (5.5,5);
+  \coordinate (Bc) at ($(T)+(0,-\H)$);
+  \fill[black!5] ($(T)+(-\R,0)$) arc[start angle=180,end angle=360,x radius=\R,y radius=\ry] -- ($(Bc)+(\R,0)$) arc[start angle=0,end angle=-180,x radius=\R,y radius=\ry] -- cycle;
+  % Hidden: back of the base rim and the cone's slant edges inside the canister.
+  \draw[construction] ($(Bc)+(\R,0)$) arc[start angle=0,end angle=180,x radius=\R,y radius=\ry];
+  \draw[construction] ($(T)+(-\R,0)$) -- (Bc) -- ($(T)+(\R,0)$);
+  % Visible outline.
+  \draw ($(T)+(-\R,0)$) -- ($(Bc)+(-\R,0)$) arc[start angle=180,end angle=360,x radius=\R,y radius=\ry] -- ($(T)+(\R,0)$);
+  \filldraw[fill=black!14] (T) ellipse[x radius=\R,y radius=\ry];
+  \draw[line width=.4pt] (T) -- ($(T)+(\R,0)$);
+  \node[point] at (T) {};
+  \node[point] at (Bc) {};
+  % Radius dimension above the top, height dimension to the right.
+  \draw[line width=.3pt] ($(T)+(0,.1)$) -- ($(T)+(0,.8)$) ($(T)+(\R,.1)$) -- ($(T)+(\R,.8)$);
+  \draw[dimension] ($(T)+(0,.65)$) -- ($(T)+(\R,.65)$);
+  \node[anchor=west] at ($(T)+(\R+.15,.65)$) {3.0 cm};
+  \draw[line width=.3pt] ($(T)+(\R+.1,0)$) -- ($(T)+(\R+.9,0)$) ($(Bc)+(\R+.1,0)$) -- ($(Bc)+(\R+.9,0)$);
+  \draw[dimension] ($(T)+(\R+.75,0)$) -- node[right] {12 cm} ($(Bc)+(\R+.75,0)$);
+  \NotToScale{(10.8,1)}
+  \ExamBounds{124}{59.9333}
+\end{tikzpicture}
+\end{document}

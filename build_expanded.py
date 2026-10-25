@@ -7,7 +7,6 @@ import pymupdf
 
 ROOT=Path(__file__).parent
 runpy.run_path(str(ROOT/'make_original_assets.py'))
-runpy.run_path(str(ROOT/'make_vector_assets.py'))
 
 def replace_once(text,old,new):
     assert text.count(old)==1, f'Expected one occurrence: {old!r}'
@@ -38,7 +37,7 @@ for stem,source,target in [
 ]:
     generated=ROOT/f'{stem}_expanded.generated.typ'
     generated.write_text(source)
-    typst.compile(str(generated),output=str(ROOT/target))
+    typst.compile(str(generated),output=str(ROOT/target),timestamp=1792886400)
     doc=pymupdf.open(ROOT/target)
     pages=[]
     for i,page in enumerate(doc):

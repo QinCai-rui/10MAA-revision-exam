@@ -1,0 +1,29 @@
+\input{style.tex}
+\begin{document}
+\begin{tikzpicture}
+  % Coordinates in cm; 1 cm in the question = 0.6 cm here. C lies on the ray
+  % from B at 35 degrees above BA, at distance 14cos35 -/+ sqrt(10^2 - (14sin35)^2) from B.
+  \def\k{.6}
+  \coordinate (A) at (3.6,1.4);
+  \coordinate (B) at ($(A)+(14*\k,0)$);
+  \pgfmathsetmacro{\dl}{14*cos(35)-sqrt(100-(14*sin(35))^2)}
+  \pgfmathsetmacro{\dr}{14*cos(35)+sqrt(100-(14*sin(35))^2)}
+  \coordinate (C1) at ($(B)+(145:\dl*\k)$);
+  \coordinate (C2) at ($(B)+(145:\dr*\k)$);
+  % Circle centre A radius 10 cm, shown as a faint construction arc.
+  \draw[construction,black!45] ($(A)+(12:10*\k)$) arc[start angle=12,end angle=100,radius=10*\k];
+  \draw (A) -- (B) -- (C2) -- cycle;
+  \draw (A) -- (C1);
+  \pic[draw,line width=.45pt,angle radius=11mm,"$35^\circ$",angle eccentricity=1.38] {angle=C1--B--A};
+  \foreach \p in {A,B,C1,C2} \node[point] at (\p) {};
+  \node[below left] at (A) {$A$};
+  \node[below right] at (B) {$B$};
+  \node[anchor=south west,inner sep=1.5pt] at (C1) {$C_1$};
+  \node[above right] at (C2) {$C_2$};
+  \node[below=1.5mm] at ($(A)!.5!(B)$) {14 cm};
+  \path (A) -- node[sloped,below,pos=.58] {10 cm} (C1);
+  \path (A) -- node[left=1mm,pos=.5] {10 cm} (C2);
+  \NotToScale{(13.8,7.2)}
+  \ExamBounds{156}{85.8}
+\end{tikzpicture}
+\end{document}

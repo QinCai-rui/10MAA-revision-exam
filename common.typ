@@ -1,3 +1,4 @@
+#let diagram-manifest = json("diagrams/manifest.json")
 #let document-style(body) = {
   set page(paper: "a4", margin: (x: 13mm, top: 13mm, bottom: 15mm), numbering: "1", number-align: center)
   set text(font: "Liberation Serif", size: 11pt)
@@ -19,6 +20,15 @@
   v(5pt)
 }
 #let space(height: 25mm, marks: 1) = {v(height);align(right)[\[#marks\]];v(5pt)}
-#let diagram(name, width: 130mm) = align(center, image("assets/" + name + ".svg", width: width))
+#let diagram(name, width: 130mm) = align(center, {
+  if name in diagram-manifest {
+    let spec = diagram-manifest.at(name)
+    assert(calc.abs(width - spec.width_mm * 1mm) < 0.01mm,
+      message: "Use the diagram's print width to preserve label and stroke sizes")
+    image("assets/diagrams/" + name + ".pdf", width: width, alt: spec.alt)
+  } else {
+    image("assets/" + name + ".svg", width: width)
+  }
+})
 #let tbl(columns, ..cells) = table(columns: columns, stroke: .5pt, inset: 6pt, align: center + horizon, ..cells)
 #let newpage() = pagebreak()

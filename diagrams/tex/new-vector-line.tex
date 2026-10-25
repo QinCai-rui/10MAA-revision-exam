@@ -1,0 +1,22 @@
+\input{style.tex}
+\begin{document}
+\begin{tikzpicture}
+  \coordinate (O) at (2.5,6.2);
+  \coordinate (A) at (4.2,1.5);
+  \coordinate (B) at (8.1,3.7);
+  \coordinate (C) at ($(A)!2/3!(B)$);
+  \coordinate (D) at ($(A)!2!(B)$);
+  \draw (O)--(A)--(D);
+  \draw[vector] (O)--(B) node[midway,above left=2pt] {$\symbf{q}$};
+  \draw[vector] (O)--(A) node[midway,left=3pt] {$\symbf{p}$};
+  \draw[construction] (O)--(D);
+  \node[left=2pt] at (O) {$O$};
+  \node[below=2pt] at (A) {$A$};
+  \node[above=2pt] at (B) {$B$};
+  \node[point] at (C) {};
+  \node[below=3pt] at (C) {$C$};
+  \node[right=2pt] at (D) {$D$};
+  \NotToScale{(12.9,1.6)}
+  \ExamBounds{151}{75.5}
+\end{tikzpicture}
+\end{document}

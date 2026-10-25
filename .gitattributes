@@ -1,0 +1,2 @@
+# PDFs contain binary streams and must not receive text or newline conversion.
+*.pdf binary

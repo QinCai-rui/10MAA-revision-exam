@@ -1,0 +1,15 @@
+\input{style.tex}
+\begin{document}
+\begin{tikzpicture}
+  \filldraw[fill=black!14] (4.5,.8) rectangle (8.4,6.9);
+  \filldraw[fill=white] (4.8,1.1) rectangle (8.1,6.6);
+  \node[align=center] at (6.45,3.9) {Original\\image};
+  \node[above=3pt] at (6.45,1.1) {$n$ cells};
+  \node[rotate=90] at (3.8,3.85) {$(n+7)$ cells};
+  \draw[dimension] (8.1,4.8)--(8.4,4.8);
+  \draw (8.4,4.8)--(9.4,5.3);
+  \node[right] at (9.4,5.3) {1 cell};
+  \NotToScale{(10.8,1.5)}
+  \ExamBounds{130}{76.60714}
+\end{tikzpicture}
+\end{document}
