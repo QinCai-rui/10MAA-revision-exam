@@ -1,22 +1,25 @@
 \input{style.tex}
 \begin{document}
 \begin{tikzpicture}
-  \begin{scope}[shift={(5.4,5.4)},x=4mm,y=4mm]
-    \coordinate (P) at (0,0);
-    \coordinate (A) at (-4,-8);
-    \coordinate (B) at (16,-8);
-    \coordinate (K) at (0,-8);
-    \draw (-5.5,-11)--(1.7,3.4);
-    \draw (-6.5,3.25)--(18,-9);
-    \draw (-6,-8)--(19,-8);
+  % Use the stated equations and equal axis units, without displaying answers.
+  \begin{scope}[shift={(3.7,3.35)},x=4.5mm,y=4.5mm]
+    \coordinate (P) at (2,5);
+    \coordinate (A) at (-2,-3);
+    \coordinate (B) at (18,-3);
+    \coordinate (K) at (2,-3);
+    \draw (-2.8,-4.6)--(2.65,6.3);
+    \draw (-.5,6.25)--(19,-3.5);
+    \draw (-3.5,-3)--(20,-3);
     \draw[construction] (P)--(K);
-    \node[above left=2pt] at (P) {$P$};
-    \node[below left=2pt] at (A) {$A$};
-    \node[below right=2pt] at (B) {$B$};
-    \node[below right=2pt] at (K) {$K$};
-    \node[left=3pt] at (-2,-4) {$L$};
-    \node[above right=2pt] at (9,-4.5) {$M$};
-    \node[above=3pt] at (5,-8) {$y=-3$};
+    \pic[draw,line width=.4pt,angle radius=2.5mm] {right angle=B--K--P};
+    \foreach \p in {A,B,P,K} \node[point] at (\p) {};
+    \node[left=6pt,yshift=-3pt] at (P) {$P$};
+    \node[below=7pt] at (A) {$A$};
+    \node[below=7pt] at (B) {$B$};
+    \node[below=7pt] at (K) {$K$};
+    \node[left=7pt] at (0,1) {$L$};
+    \node[above=7pt] at (11,.5) {$M$};
+    \node[below=7pt] at (10,-3) {$y=-3$};
   \end{scope}
   \NotToScale{(12.8,6.1)}
   \ExamBounds{150}{72.58065}
