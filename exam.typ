@@ -177,7 +177,7 @@ Two cards are selected at random without replacement.]
  [$40<t<=80$], [24],
  [$80<t<=140$], [18],
 )]
-#q[][Two students use the table to draw the diagrams below.]
+#q[][Two students draw the diagrams below using the table. In a histogram, the area of each bar must be proportional to its frequency.]
 #v(2mm)
 #diagram("new-histogram-comparison", width: 180mm)
 #v(2mm)

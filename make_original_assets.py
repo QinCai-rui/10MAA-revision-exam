@@ -58,7 +58,7 @@ histogram('new-histogram-answer.svg',True)
 
 # Competing histograms for an error-analysis and transformation question.
 s=SVG(1240,400)
-def histogram_panel(offset, maximum, heights, title, shade=False):
+def histogram_panel(offset, maximum, heights, title, axis_label, shade=False):
     L,R,T,B=offset+65,offset+590,55,335
     def p(x,y):return L+x/140*(R-L),B-y/maximum*(B-T)
     for x in [0,20,40,60,80,100,120,140]:
@@ -75,10 +75,10 @@ def histogram_panel(offset, maximum, heights, title, shade=False):
         s.poly([p(60,0),p(80,0),p(80,.6),p(60,.6)],fill='#b8b8b8',width=1)
     s.line(p(0,0),p(140,0));s.line(p(0,0),p(0,maximum))
     s.text((L+R)/2,24,title,26)
-    s.text(L,44,'Bar height',20,anchor='start')
+    s.text(L,44,axis_label,20,anchor='start')
     s.text((L+R)/2,394,'Build time (seconds)',22)
-histogram_panel(0,30,[12,18,24,18],'Diagram A')
-histogram_panel(620,1,[.6,.9,.6,.3],'Diagram B',True)
+histogram_panel(0,30,[12,18,24,18],'Diagram A','Frequency')
+histogram_panel(620,1,[.6,.9,.6,.3],'Diagram B','Frequency density',True)
 s.save('new-histogram-comparison.svg')
 
 # The two SSA triangles are constructed from the actual intersections.

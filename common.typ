@@ -13,7 +13,10 @@
   ]
   v(8pt)
 }
-#let q(label, body) = block(above: 10pt, below: 5pt)[#grid(columns: (22pt, 1fr), [#label], body)]
+#let q(label, body) = block(above: 10pt, below: 5pt)[
+  #list(marker: box(width: 22pt, label), marker-align: left,
+    indent: 0pt, body-indent: 0pt, block(width: 100%, body))
+]
 // `grow` is a share of the page's leftover height, added on top of `height`.
 // Pages end with a page break, so the parts on a page split the unused space
 // in proportion to `grow` and the answer lines settle towards the page foot.
