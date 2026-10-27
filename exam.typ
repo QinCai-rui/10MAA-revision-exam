@@ -27,8 +27,8 @@ Maths teacher's code: #h(3mm) #box(width: 77mm, line(length: 100%, stroke: .5pt)
 - Answer *all questions in this booklet*, showing working in the appropriate space.
 - Unless otherwise stated, give non-exact answers to *three significant figures*, angles to *one decimal place*, and money to *two decimal places*.
 #v(5mm)
-#table(columns: (76mm, 24mm), stroke: .5pt, inset: 4pt,
-  [*Topic*], [*Mark*],
+#table(columns: (76mm, 24mm), stroke: .5pt, inset: 4pt, align: (left, right),
+  [*Topic*], table.cell(align: left)[*Mark*],
   [Algebraic Expressions & Equations], [/31],
   [Statistics & Probability], [/27],
   [Trigonometry], [/13],
