@@ -1,0 +1,11 @@
+{
+  "mast": {"width_mm": 132, "height_mm": 61, "alt": "A twelve metre vertical mast and a cable to a ground point nine metres from its foot."},
+  "bearings": {"width_mm": 145, "height_mm": 75, "alt": "A to B is eight kilometres east. B to C is six kilometres on bearing 030 degrees."},
+  "cylinder": {"width_mm": 120, "height_mm": 62, "alt": "A cylindrical tank with radius 0.4 metres and height 1.2 metres."},
+  "plate": {"width_mm": 135, "height_mm": 70, "alt": "A twenty by twelve centimetre rectangular plate with two holes of radius three centimetres."},
+  "arch": {"width_mm": 135, "height_mm": 62, "alt": "A parabolic arch reaches a height of five metres at x equals five and meets the ground at x equals zero and ten."},
+  "isosceles": {"width_mm": 135, "height_mm": 47, "alt": "Isosceles triangle A B C with equal sides A B and A C and angle B A C equal to 38 degrees."},
+  "cyclic": {"width_mm": 140, "height_mm": 80, "alt": "Cyclic quadrilateral P Q R S, with S R extended through R to T."},
+  "vectors": {"width_mm": 140, "height_mm": 72, "alt": "Triangle O M N with P the midpoint of O M and Q the midpoint of O N."
+  }
+}

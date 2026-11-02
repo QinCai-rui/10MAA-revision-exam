@@ -14,6 +14,9 @@ venv/
 # Generated Typst intermediates and page-by-page review output
 *.generated.typ
 /review/
+/paper-1/review/
+/paper-2/review/
+/paper-2/review-diagrams/
 /review-new/
 /review-expanded/
 /review-diagrams/

@@ -1,0 +1,15 @@
+\input{style.tex}
+\begin{document}
+\begin{tikzpicture}
+  \draw[axis] (1,1)--(12.5,1) node[right] {$x$};
+  \draw[axis] (2,0.5)--(2,5.5) node[above] {$y$};
+  \draw[domain=0:10,samples=81,smooth] plot ({2+\x},{1+0.16*\x*(10-\x)});
+  \draw[construction] (7,1)--(7,5);
+  \node[below left] at (2,1) {$O$};
+  \node[below] at (12,1) {$10$};
+  \node[below] at (7,1) {$5$};
+  \node[above] at (7,5) {$(5,5)$};
+  \NotToScale{(11.5,5.4)}
+  \ExamBounds{135}{62}
+\end{tikzpicture}
+\end{document}

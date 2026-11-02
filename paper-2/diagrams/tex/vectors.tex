@@ -1,0 +1,23 @@
+\input{style.tex}
+\begin{document}
+\begin{tikzpicture}
+  \coordinate (O) at (1.7,1.1);
+  \coordinate (M) at (11.6,1.1);
+  \coordinate (N) at (7,6.1);
+  \coordinate (P) at ($(O)!.5!(M)$);
+  \coordinate (Q) at ($(O)!.5!(N)$);
+  \draw[vector] (O)--(M) node[pos=.28,below=3pt] {$\symbf{p}$};
+  \draw[vector] (O)--(N) node[pos=.35,above left=3pt] {$\symbf{q}$};
+  \draw (M)--(N);
+  \draw (P)--(Q);
+  \node[below left] at (O) {$O$};
+  \node[below right] at (M) {$M$};
+  \node[above] at (N) {$N$};
+  \node[below=1pt] at (P) {$P$};
+  \node[left] at (Q) {$Q$};
+  \node[point] at (P) {};
+  \node[point] at (Q) {};
+  \NotToScale{(11.7,6.1)}
+  \ExamBounds{140}{72}
+\end{tikzpicture}
+\end{document}

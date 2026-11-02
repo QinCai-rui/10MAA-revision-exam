@@ -1,0 +1,21 @@
+\input{style.tex}
+\begin{document}
+\begin{tikzpicture}
+  % A to B is east; B to C has polar angle 60 degrees, i.e. bearing 030.
+  \coordinate (A) at (1.4,1.2);
+  \coordinate (B) at (8.6,1.2);
+  \coordinate (C) at ($(B)+(60:4.0)$);
+  \draw (A)--(B)--(C);
+  \draw[construction] (A)--(C);
+  \draw[construction,-{Stealth[length=4pt,width=3pt]}] (B)--++(0,4.7) node[above] {N};
+  \draw[->,line width=.45pt] ($(B)+(0,1.5)$) arc[start angle=90,end angle=60,radius=1.5];
+  \node at ($(B)+(74:2.1)$) {$030^\circ$};
+  \path (A)--node[below=3pt] {8 km} (B);
+  \path (B)--node[sloped,below right=3pt] {6 km} (C);
+  \node[below left] at (A) {$A$};
+  \node[below] at (B) {$B$};
+  \node[above right] at (C) {$C$};
+  \NotToScale{(12,1)}
+  \ExamBounds{145}{75}
+\end{tikzpicture}
+\end{document}

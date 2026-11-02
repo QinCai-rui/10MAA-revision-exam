@@ -1,0 +1,15 @@
+\input{style.tex}
+\begin{document}
+\begin{tikzpicture}
+  \coordinate (A) at (3,1);
+  \coordinate (B) at (3,5);
+  \coordinate (C) at (6,1);
+  \draw (A)--(B)--(C)--cycle;
+  \draw ($(A)+(0,.4)$)--++(.4,0)--++(0,-.4);
+  \path (A)--node[left=3pt] {12 m} (B);
+  \path (A)--node[below=3pt] {9 m} (C);
+  \path (B)--node[sloped,above right=2pt] {cable} (C);
+  \NotToScale{(10.8,1.2)}
+  \ExamBounds{132}{61}
+\end{tikzpicture}
+\end{document}

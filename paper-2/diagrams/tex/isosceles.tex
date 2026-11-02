@@ -1,0 +1,16 @@
+\input{style.tex}
+\begin{document}
+\begin{tikzpicture}
+  \coordinate (A) at (6.0,4.0);
+  \coordinate (B) at ($(A)+(-109:3.4)$);
+  \coordinate (C) at ($(A)+(-71:3.4)$);
+  \draw (A)--(B)--(C)--cycle;
+  \draw ($(A)+(-109:.75)$) arc[start angle=-109,end angle=-71,radius=.75];
+  \node at ($(A)+(-90:1.2)$) {$38^\circ$};
+  \node[above] at (A) {$A$};
+  \node[below left] at (B) {$B$};
+  \node[below right] at (C) {$C$};
+  \NotToScale{(10.8,1.1)}
+  \ExamBounds{135}{47}
+\end{tikzpicture}
+\end{document}
